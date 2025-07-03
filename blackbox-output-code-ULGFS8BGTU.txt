@@ -1,0 +1,287 @@
+
+
+Let me know specifically what elements you'd like to modify and I'll provide the precise SEARCH/REPLACE diffs for those changes. I can help with:
+- Text content
+- Prices
+- Contact info 
+- Images
+- Styling
+- Layout adjustments
+- Functionality changes
+- etc.Here is the updated HTML content after applying above edits:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zibá Indumentaria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(112, 28, 28, 0.7), rgba(112, 28, 28, 0.7)), 
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b7045ae-0779-4c66-950d-a02ae4d255b9.png') center/cover no-repeat;
+        }
+        
+        .product-card:hover .product-overlay {
+            opacity: 1;
+        }
+        
+        .cart-count {
+            top: -8px;
+            right: -8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-2xl font-semibold tracking-tight" style="color: #701c1c;">ZIBÁ</a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition">Inicio</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition">Mujer</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition">Hombre</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition">Colecciones</a>
+                <a href="#" class="text-gray-700 hover:text-gray-900 transition">Nosotros</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <button class="relative">
+                    <i class="fas fa-shopping-bag text-gray-700 hover:text-gray-900 text-xl"></i>
+                    <span class="cart-count absolute bg-red-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                </button>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-gray-700 hover:text-gray-900 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-96 flex items-center justify-center text-white">
+        <div class="text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-light mb-4">MODA CON PROPÓSITO</h1>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Diseño consciente para tu estilo de vida</p>
+            <a href="#" class="inline-block border border-white px-8 py-3 hover:bg-white hover:bg-opacity-20 transition">DESCUBRIR</a>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-light mb-4">COLECCIONES DESTACADAS</h2>
+            <div class="w-20 h-px bg-gray-300 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="relative group overflow-hidden">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d64890b5-4d91-4b64-b22b-eda13841a13b.png" alt="Colección de vestidos modernos en tonos neutros para mujer" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 p-6 text-center">
+                    <h3 class="text-xl mb-2">Colección Primavera 2023</h3>
+                    <p class="text-sm mb-4">Diseños femeninos con inspiración orgánica</p>
+                    <a href="#" class="text-sm uppercase tracking-wider" style="color: #701c1c;">Ver Colección</a>
+                </div>
+            </div>
+            
+            <div class="relative group overflow-hidden">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57ab742f-4ae8-4f9b-8f64-355f3cba65e7.png" alt="Trajes elegantes y camisas formales para hombre en colores oscuros" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 p-6 text-center">
+                    <h3 class="text-xl mb-2">Hombre Contemporáneo</h3>
+                    <p class="text-sm mb-4">Siluetas refinadas para el hombre moderno</p>
+                    <a href="#" class="text-sm uppercase tracking-wider" style="color: #701c1c;">Ver Colección</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-light mb-4">NUESTROS PRODUCTOS</h2>
+            <div class="w-20 h-px bg-gray-300 mx-auto"></div>
+        </div>
+        
+        <div class="flex justify-center mb-8">
+            <div class="inline-flex rounded-md shadow-sm">
+                <button class="px-4 py-2 text-sm font-medium rounded-l-lg" style="background-color: #701c1c; color: white;">Todos</button>
+                <button class="px-4 py-2 text-sm font-medium bg-white hover:bg-gray-100">Mujer</button>
+                <button class="px-4 py-2 text-sm font-medium bg-white hover:bg-gray-100 rounded-r-md">Hombre</button>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Product 1 -->
+            <div class="product-card relative group">
+                <div class="overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0b533b19-c8c7-400b-aa44-d5f3104a53ea.png" alt="Blazer elegante color beige para mujer con detalles minimalistas" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-3">
+                    <h3 class="text-sm font-medium">Blazer Minimal</h3>
+                    <p class="text-sm text-gray-500">Mujer</p>
+                    <p class="text-sm mt-1">$299.990</p>
+                </div>
+                <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition flex items-center justify-center">
+                    <button class="bg-white text-black px-4 py-2 hover:bg-opacity-90 transition" style="color: #701c1c;">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card relative group">
+                <div class="overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/752f9e1c-9bcb-4e94-b0c3-2ec5972c285c.png" alt="Camisa de vestir blanca para hombre con corte moderno" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-3">
+                    <h3 class="text-sm font-medium">Camisa Clásica</h3>
+                    <p class="text-sm text-gray-500">Hombre</p>
+                    <p class="text-sm mt-1">$89.990</p>
+                </div>
+                <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition flex items-center justify-center">
+                    <button class="bg-white text-black px-4 py-2 hover:bg-opacity-90 transition" style="color: #701c1c;">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card relative group">
+                <div class="overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/25b1a3c0-77f1-4126-8251-664a8810561a.png" alt="Vestido largo negro de noche con detalles arquitectónicos" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-3">
+                    <h3 class="text-sm font-medium">Vestido Nocturno</h3>
+                    <p class="text-sm text-gray-500">Mujer</p>
+                    <p class="text-sm mt-1">$199.990</p>
+                </div>
+                <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition flex items-center justify-center">
+                    <button class="bg-white text-black px-4 py-2 hover:bg-opacity-90 transition" style="color: #701c1c;">Agregar al carrito</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card relative group">
+                <div class="overflow-hidden">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/50bc09a8-dfec-40aa-b53a-acde5694aa6e.png" alt="Chaqueta de cuero marrón para hombre con acabado envejecido" class="w-full h-full object-cover">
+                </div>
+                <div class="mt-3">
+                    <h3 class="text-sm font-medium">Chaqueta Cuero</h3>
+                    <p class="text-sm text-gray-500">Hombre</p>
+                    <p class="text-sm mt-1">$349.990</p>
+                </div>
+                <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition flex items-center justify-center">
+                    <button class="bg-white text-black px-4 py-2 hover:bg-opacity-90 transition" style="color: #701c1c;">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="#" class="inline-block border border-gray-800 px-8 py-3 hover:bg-gray-800 hover:text-white transition">VER MÁS</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-light mb-6">SOBRE ZIBÁ</h2>
+                <p class="mb-6">En Zibá creemos en la indumentaria como expresión de identidad. Cada pieza es diseñada con atención al detalle, utilizando materiales de primera calidad que garantizan durabilidad y confort.</p>
+                <p>Nuestro diseño minimalista busca resaltar la esencia del portador, eliminando lo superfluo para celebrar la belleza de lo esencial.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="bg-white p-8 shadow-sm max-w-4xl mx-auto">
+            <div class="text-center mb-6">
+                <h3 class="text-2xl font-light mb-2">SUSCRÍBETE A NUESTRO NEWSLETTER</h3>
+                <p class="text-gray-600">Recibe las últimas novedades y ofertas exclusivas</p>
+            </div>
+            <form class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Tu correo electrónico" class="flex-grow px-4 py-2 border border-gray-300 focus:outline-none focus:border-gray-500">
+                <button type="submit" class="px-6 py-2 ml-2 text-white" style="background-color: #701c1c;">SUSCRIBIRSE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-medium mb-4">ZIBÁ</h4>
+                    <p class="text-gray-400 text-sm">Indumentaria contemporánea diseñada para aquellos que valoran la elegancia discreta y la calidad excepcional.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">TIENDA</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Todos los productos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Nuestras colecciones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Nuevos lanzamientos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">AYUDA</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Preguntas frecuentes</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Guía de tallas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Política de devoluciones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium mb-4">CONTACTO</h4>
+                    <address class="not-italic text-gray-400 text-sm">
+                        <p>San Juan, Argentina</p>
+                        <p class="mt-2">info@zibaindumentaria.com</p>
+                        <p>+54 264 4123-4567</p>
+                    </address>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Zibá Indumentaria. Todos los derechos reservados.</p>
+                <div class="flex space-x-4">
+                    <a href="#"><i class="fab fa-facebook-f text-gray-400 hover:text-white"></i></a>
+                    <a href="#"><i class="fab fa-instagram text-gray-400 hover:text-white"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p text-gray-400 hover:text-white"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple cart functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.product-overlay button');
+            const cartCount = document.querySelector('.cart-count');
+            
+            let cartItems = 0;
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartItems++;
+                    cartCount.textContent = cartItems;
+                    
+                    // Animation feedback
+                    this.textContent = '✓ Agregado';
+                    setTimeout(() => {
+                        this.textContent = 'Agregar al carrito';
+                    }, 1500);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
